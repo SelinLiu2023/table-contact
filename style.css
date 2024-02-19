@@ -1,0 +1,20 @@
+:root{
+    --greycolor: rgb(213, 212, 212);
+}
+table{
+    width: 95%;
+    margin: 5rem auto;
+}
+table,th,td{
+    border: 0.5px solid var(--greycolor);
+    border-collapse: collapse;
+}
+td,th{
+    padding: 1rem;
+}
+tr:nth-child(odd):not(thead tr){
+    background-color: var(--greycolor);
+}
+tr td:last-child:not(thead tr th){
+    text-align: right;
+}
