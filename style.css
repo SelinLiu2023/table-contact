@@ -12,9 +12,23 @@ table,th,td{
 td,th{
     padding: 1rem;
 }
-tr:nth-child(odd):not(thead tr){
+/* tr:nth-child(odd):not(thead tr){
     background-color: var(--greycolor);
 }
 tr td:last-child:not(thead tr th){
     text-align: right;
+} */
+tr:not(thead tr):nth-child(odd){
+    background-color: var(--greycolor);
+}
+tr td:last-child{
+    text-align: right;
+}
+tr:has(td:last-child:hover){
+    background-color: blue;
+    color: white;
+}
+td:last-child:hover{
+    scale: 1.5;
+    transform:translateX(-100px);
 }
